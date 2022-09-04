@@ -1,0 +1,21 @@
+[package]
+name = "Evasion"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+widestring = "1.0.2"
+
+[dependencies.windows]
+version = "0.39.0"
+features = [
+    "Win32_System_Kernel",
+    "Win32_System_Threading",
+    "Win32_Foundation",
+    "Win32_Storage_FileSystem",
+    "Win32_Security",
+    "Win32_System_WindowsProgramming",
+    "Win32_System_SystemInformation",
+    "Win32_System_LibraryLoader",
+]
